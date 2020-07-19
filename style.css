@@ -1,0 +1,152 @@
+
+body {
+    margin: 0;
+}
+.wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto 206px;
+    grid-template-rows: auto 206px;
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: #F4F1E9;
+    justify-items: center;
+    padding: 0 5%;
+    height: 100vh;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.wrapper > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+.wrapper > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+.wrapper__image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+}
+.wrapper__img {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-top: 5%;
+}
+.wrapper__text-up {
+    font-family: Arial;
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.1px;
+    color: #2B234C;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.wrapper__text-down {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.08px;
+    color: #2B234C;
+    text-align: center;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.wrapper__btn {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background-color: #2B234C;
+    -webkit-box-shadow: 0px 1px 10px rgba(43, 35, 76, 0.3);
+            box-shadow: 0px 1px 10px rgba(43, 35, 76, 0.3);
+    border-radius: 8px;
+    height: 58px;
+    width: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+}
+.wrapper__btn:hover {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(156, 156, 156, 0)), color-stop(rgba(97, 15, 192, 0.8)), to(rgba(156, 156, 156, 0))) no-repeat -2em 0%;
+    background: -o-linear-gradient(right, rgba(156, 156, 156, 0), rgba(97, 15, 192, 0.8), rgba(156, 156, 156, 0)) no-repeat -2em 0%;
+    background: linear-gradient(to left, rgba(156, 156, 156, 0), rgba(97, 15, 192, 0.8), rgba(156, 156, 156, 0)) no-repeat -2em 0%;
+    background-size: 9em 100%;
+}
+.wrapper__btn:active {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(156, 156, 156, 0)), color-stop(rgba(97, 15, 192, 0.8)), to(rgba(156, 156, 156, 0))) no-repeat -2em 0%;
+    background: -o-linear-gradient(right, rgba(156, 156, 156, 0), rgba(97, 15, 192, 0.8), rgba(156, 156, 156, 0)) no-repeat -2em 0%;
+    background: linear-gradient(to left, rgba(156, 156, 156, 0), rgba(97, 15, 192, 0.8), rgba(156, 156, 156, 0)) no-repeat -2em 0%;
+    background-size: 9em 100%;
+}
+.wrapper__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: space-evenly;
+        align-content: space-evenly;
+    height: 206px;
+}
+
+.wrapper--dark {
+    background-color: #1A133C;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.wrapper__text-up--dark {
+    color: #FFFFFF;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.wrapper__btn--dark {
+    background: #D259F5;
+    -webkit-box-shadow: 0px 1px 10px rgba(210, 89, 245, 0.6);
+            box-shadow: 0px 1px 10px rgba(210, 89, 245, 0.6);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.wrapper__text-down--dark {
+    color: #D259F5;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.animate {
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+}

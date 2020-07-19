@@ -41,6 +41,7 @@ body {
     height: auto;
     border-radius: 8px;
     cursor: pointer;
+    object-fit: cover;
     padding-top: 5%;
 }
 .wrapper__text-up {

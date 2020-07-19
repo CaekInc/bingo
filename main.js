@@ -11,3 +11,10 @@ var changeColor = function () {
     pushBtn.classList.toggle('wrapper__btn--dark');
 };
 themeToggle.addEventListener('click', changeColor);
+
+var vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('resize', () => {
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
